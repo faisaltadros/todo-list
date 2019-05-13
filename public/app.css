@@ -3,12 +3,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background: #ecf0f1;
 	linear-gradient(to left, #ddd6f3, #faaca8);
-	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(linear, right top, left top, from(#ddd6f3), to(#faaca8));
+	background: -webkit-linear-gradient(right, #ddd6f3, #faaca8);
+	background: -o-linear-gradient(right, #ddd6f3, #faaca8);
 	background: linear-gradient(to left, #ddd6f3, #faaca8);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
+	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 	max-width: 460px;
 	width: 95%;
@@ -17,12 +19,28 @@ body {
 }
 
 h1 {
-  background: #430059;
-  color: white;
-  margin: 0;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-weight: normal;
+	background: #430059;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+::-webkit-input-placeholder {
+	opacity: .6;
+}
+
+:-ms-input-placeholder {
+	opacity: .6;
+}
+
+::-ms-input-placeholder {
+	opacity: .6;
+}
+
+::placeholder {
+	opacity: .6;
 }
 
 input {
@@ -30,6 +48,7 @@ input {
 	background: #F7F7F7;
 	width: 100%;
 	padding: 13px 13px 13px 25px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #430059;
 	border: 3px solid #F7F7F7;
@@ -43,12 +62,16 @@ input:focus {
 
 .entry {
 	background: white;
-	color: #666;
+	font-weight: 400;
+	color: #430059;
 	margin: 0;
 	padding: 0;
 	height: auto;
 	min-height: 40px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 }
@@ -64,11 +87,9 @@ input:focus {
 	text-align: center;
 	width: 0px;
 	opacity: 0;
-	-moz-transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .entry:hover .trash {
@@ -83,6 +104,7 @@ input:focus {
 	word-wrap: break-word;
 	cursor: default;
 	max-width: 100%;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -94,11 +116,9 @@ input:focus {
 .fa-chevron-circle-down {
 	float: right;
 	opacity: .5;
-	-moz-transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .fa-chevron-circle-down:hover {
