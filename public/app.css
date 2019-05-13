@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #ecf0f1;
+	linear-gradient(to left, #ddd6f3, #faaca8);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ddd6f3, #faaca8);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+	max-width: 460px;
+	width: 95%;
+	margin: 6.5% auto;
+	background: #EAC8F5;
+}
+
+h1 {
+  background: #430059;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+input {
+	font-size: 18px;
+	background: #F7F7F7;
+	width: 100%;
+	padding: 13px 13px 13px 25px;
+	box-sizing: border-box;
+	color: #430059;
+	border: 3px solid #F7F7F7;
+}
+
+input:focus {
+	background: white;
+	border: 3px solid #430059;
+	outline: none;
+}
+
+.entry {
+	background: white;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	min-height: 40px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+}
+
+.entry:nth-child(2n) {
+	background: #F7F7F7;
+}
+
+.trash {
+	background: #C0004C;
+	min-width: 0px;
+	color: white;
+	text-align: center;
+	width: 0px;
+	opacity: 0;
+	-moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.entry:hover .trash {
+	min-width: 40px;
+	opacity: 1;
+	vertical-align: center;
+}
+
+.text {
+	margin: auto 0;
+	padding: 5px 40px 5px 30px;
+	word-wrap: break-word;
+	cursor: default;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.done {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.fa-chevron-circle-down {
+	float: right;
+	opacity: .5;
+	-moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.fa-chevron-circle-down:hover {
+	opacity: 1;
+}

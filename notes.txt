@@ -1,0 +1,13 @@
+Todo API App
+===================
+
+
+THE ROUTES
+================
+Route                Verb            Route                   Description    
+-----------------------------------------------------------------------------                  
+Index                GET             /api/todos              List all todos
+Create               POST            /api/todos              Create new todos
+Show                 GET             /api/todos/:todoId      Retrieve a todo
+Update               PUT             /api/todos/:todoId      Update a todo
+Delete               DELETE          /api/todos/:todoId      Delete a todo
